@@ -20,5 +20,10 @@ pipeline {
         sh 'echo \'test\''
       }
     }
+    stage('delivery') {
+      steps {
+        input 'lanjutkan'
+      }
+    }
   }
 }
